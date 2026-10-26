@@ -1,0 +1,17 @@
+SISTEMA VETERINARIO
+
+PRUEBA DE GITHUB CLI
+
+ROL: Frontend
+
+RESPONSABILIDAD INICIAL:
+Desarrollar la futura interfaz del Sistema Veterinario 
+
+RAMA:
+frontend
+
+Estado:
+Prueba realizada correctamente
+
+Alumno:
+Aidan Zazueta Medrano
