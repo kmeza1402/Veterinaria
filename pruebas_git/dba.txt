@@ -1,0 +1,8 @@
+SISTEMA VETERINARIO
+PRUEBA DE GITHUB DESKTOP
+
+Rol: DBA
+Responsabilidad inicial: Diseñar y administrar la base de datos del sistema.
+Rama: dba
+Estado: Prueba realizada correctamente.
+Alumno: Jaime Mascareno Carlos Alberto
