@@ -1,7 +1,19 @@
-# Base de Datos - Veterinaria
+# Base de datos Veterinaria
 
-## Scripts de configuración
-1. `00_crear_bd.sql` - Creación de esquema y tablas.
-2. `01_datos_prueba.sql` - Carga de datos iniciales.
-3. `02_pruebas.sql` - Pruebas de integridad.
-4. `03_verificacion_p6.sql` - Demostración de base de datos funcional.
+## Orden de ejecución
+1. 00_crear_bd.sql
+2. 01_datos_prueba.sql
+3. 02_pruebas.sql
+
+## Importante
+La base de datos local NO se sincroniza automáticamente con GitHub.
+GitHub conserva los scripts SQL. Cada integrante puede reconstruir
+la misma base ejecutando los archivos en el orden indicado.
+
+ADVERTENCIA:
+00_crear_bd.sql contiene DROP DATABASE IF EXISTS Veterinaria.
+Al ejecutarlo se elimina la base local Veterinaria y se crea nuevamente.
+
+## Practica 6
+- `03_verificacion_p6.sql`: consultas para revisar los datos.
+- No crea la base. Se usa despues de las pruebas Web.
