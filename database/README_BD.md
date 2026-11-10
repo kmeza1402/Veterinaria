@@ -13,3 +13,7 @@ la misma base ejecutando los archivos en el orden indicado.
 ADVERTENCIA:
 00_crear_bd.sql contiene DROP DATABASE IF EXISTS Veterinaria.
 Al ejecutarlo se elimina la base local Veterinaria y se crea nuevamente.
+
+## Practica 6
+- `03_verificacion_p6.sql`: consultas para revisar los datos.
+- No crea la base. Se usa despues de las pruebas Web.

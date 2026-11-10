@@ -5,6 +5,12 @@
 }
 
 <div class="container py-4">
+    @if (!string.IsNullOrWhiteSpace(Model.Error))
+    {
+        <div class="alert alert-danger">
+            @Model.Error
+        </div>
+    }
     @if (TempData["Mensaje"] is string mensaje)
     {
         <div class="alert alert-success">@mensaje</div>
