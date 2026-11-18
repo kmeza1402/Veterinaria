@@ -3,7 +3,7 @@
 ## Equipo
 - Frontend: Aidan Zazueta Medrano
 - Backend: Kevin A. Meza Espinoza
-- DBA: Carlos Alberto Jaime Mascabeño
+- DBA: Carlos Alberto Jaime Mascareño
 
 ## Estado inicial
 - Fecha: 18 de noviembre de 2026
