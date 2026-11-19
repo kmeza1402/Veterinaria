@@ -37,3 +37,27 @@ Orden recomendado:
 5. 04_verificacion_final_p7.sql
 
 Nota: `00_crear_bd.sql` elimina y reconstruye la base local.
+
+## Verificación final
+
+Resultado de `04_verificacion_final_p7.sql`:
+
+- 9 tablas: cliente, consulta, detalle_receta, mascota, medicamento, receta, rol, usuario, veterinario.
+- 9 claves primarias y 8 llaves foráneas.
+- Todas las llaves foráneas con UPDATE CASCADE y DELETE RESTRICT.
+- Max conserva su consulta; PRUEBA P7 y PixelP7 devuelven 0 filas.
+
+## Respaldo final
+
+Archivo:
+`backups/respaldo_veterinaria_p7.sql`
+
+Estado:
+generado después de aprobar P7, desde la base oficial de aceptación.
+
+Restauración:
+- si el dump incluye CREATE DATABASE, ejecutarlo directamente;
+- si no lo incluye, ejecutar antes `00_crear_bd.sql`.
+
+Importante: cargar los scripts desde Workbench o con
+`--default-character-set=utf8mb4`; si no, los acentos se guardan dañados.
