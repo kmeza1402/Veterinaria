@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿m<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,48 +10,52 @@
     <link rel="stylesheet" href="~/Veterinaria.Web.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <header class="app-header">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Veterinaria.Web</a>
+                <a class="navbar-brand app-brand" asp-area="" asp-page="/Index">
+                    <span class="brand-mark">✚</span>
+                    <span><strong class="brand-name">VetCare</strong><small class="brand-subtitle">Centro Veterinario</small></span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1 app-nav">
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Index">Inicio</a>
+                            <a class="nav-link" asp-page="/Index"><span class="nav-icon">⌂</span><span class="nav-label" style="color: #fff !important;">Inicio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Clientes/Index">Clientes</a>
+                            <a class="nav-link" asp-page="/Clientes/Index"><span class="nav-icon">♙</span><span class="nav-label" style="color: #fff !important;">Clientes</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Mascotas/Index">Mascotas</a>
+                            <a class="nav-link" asp-page="/Mascotas/Index"><span class="nav-icon">♥</span><span class="nav-label" style="color: #fff !important;">Mascotas</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Veterinarios/Index">Veterinarios</a>
+                            <a class="nav-link" asp-page="/Veterinarios/Index"><span class="nav-icon">✚</span><span class="nav-label" style="color: #fff !important;">Veterinarios</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Consultas/Index">Consultas</a>
+                            <a class="nav-link" asp-page="/Consultas/Index"><span class="nav-icon">▣</span><span class="nav-label" style="color: #fff !important;">Consultas</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Recetas/Index">Recetas</a>
+                            <a class="nav-link" asp-page="/Recetas/Index"><span class="nav-icon">▤</span><span class="nav-label" style="color: #fff !important;">Recetas</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container page-container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted">
         <div class="container">
-            &copy; 2026 - Veterinaria.Web - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <span>&copy; 2026 VetCare</span>
+            <a asp-area="" asp-page="/Privacy">Privacidad</a>
         </div>
     </footer>
 

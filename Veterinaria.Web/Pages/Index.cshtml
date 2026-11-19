@@ -5,16 +5,23 @@
 }
 
 <div class="container py-4">
-    <h1>Centro Veterinario Karely Ruiz</h1>
-    <p class="text-muted">Panel principal del sistema.</p>
+    <section class="welcome-panel mb-4">
+        <div>
+            <span class="eyebrow">PANEL PRINCIPAL</span>
+            <h1>Centro Veterinario Karely Ruiz</h1>
+            <p class="mb-0">Todo lo que necesitas para cuidar mejor a tus pacientes y sus familias.</p>
+        </div>
+        <span class="welcome-icon">♡</span>
+    </section>
 
-    <div class="row g-3 mt-2">
+    <div class="row g-4 mt-2">
         <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 dashboard-card">
                 <div class="card-body">
+                    <span class="dashboard-icon clients-icon">♙</span>
                     <h5 class="card-title">Clientes</h5>
-                    <p class="card-text">Administración de propietarios.</p>
-                    <a asp-page="/Clientes/Index" class="btn btn-primary">
+                    <p class="card-text text-muted">Administración de propietarios.</p>
+                    <a asp-page="/Clientes/Index" class="btn btn-primary stretched-link">
                         Abrir
                     </a>
                 </div>
@@ -22,11 +29,12 @@
         </div>
 
         <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100 dashboard-card">
                 <div class="card-body">
+                    <span class="dashboard-icon pets-icon">♥</span>
                     <h5 class="card-title">Mascotas</h5>
-                    <p class="card-text">Registro de mascotas.</p>
-                    <a asp-page="/Mascotas/Index" class="btn btn-primary">
+                    <p class="card-text text-muted">Registro de mascotas.</p>
+                    <a asp-page="/Mascotas/Index" class="btn btn-primary stretched-link">
                         Abrir
                     </a>
                 </div>

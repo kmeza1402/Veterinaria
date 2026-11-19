@@ -17,3 +17,4 @@
 
 - El mensaje de error tambien se ve en la vista cuando ocurren errores de carga (F-04A)
 - Fecha de nacimiento y color agregado a vista detallada de mascota (F-07)
+- Se agrego un diseño visual mas actractivo para el usuario

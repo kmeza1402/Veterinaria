@@ -3,46 +3,79 @@ for details on configuring this project to bundle and minify static web assets. 
 
 a.navbar-brand {
   white-space: normal;
-  text-align: center;
-  word-break: break-all;
+  text-align: left;
+  word-break: normal;
 }
 
-a {
-  color: #0077cc;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-.footer {
-  position: absolute;
+.app-header {
+  background: var(--vet-primary);
   bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+  box-shadow: 8px 0 24px rgba(14, 92, 84, .2);
+  color: #fff;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 248px;
+  z-index: 1030;
+}
+
+.app-header .navbar {
+  align-items: stretch;
+  height: 100%;
+  padding: 1.25rem 1rem;
+}
+
+.app-header .container {
+  align-items: stretch;
+  flex-direction: column;
+  padding: 0;
+}
+
+.app-brand {
+  align-items: center;
+  color: #fff !important;
+  display: inline-flex;
+  gap: .7rem;
+  line-height: 1.05;
+  margin: 0 0 2.5rem;
+  padding: .5rem .35rem;
+}
+.app-brand:hover { color: #fff !important; }
+.app-brand strong, .app-brand small { color: #fff !important; }
+.app-brand small { display: block; font-size: .64rem; font-weight: 500; letter-spacing: .04em; margin-top: .2rem; opacity: .78; }
+.brand-mark { align-items: center; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.24); border-radius: .75rem; color: #fff; display: inline-flex; font-size: 1.15rem; height: 2.3rem; justify-content: center; width: 2.3rem; }
+
+.app-header .navbar-collapse { align-items: stretch; display: flex !important; flex-direction: column; }
+.app-nav { flex-direction: column !important; gap: .45rem; }
+.app-nav .nav-item { width: 100%; }
+.app-nav .nav-link { align-items: center; border-radius: .7rem; color: #fff !important; display: flex; font-size: .91rem; font-weight: 600; gap: .75rem; padding: .72rem .8rem !important; }
+.app-nav .nav-label { color: #fff !important; display: inline-block; margin-left: .4rem !important; padding: 0 !important; }
+.app-nav .nav-link:hover, .app-nav .nav-link:focus { background: rgba(255,255,255,.14); color: #fff !important; }
+.nav-icon { align-items: center; background: rgba(255,255,255,.12); border-radius: .45rem; color: #fff !important; display: inline-flex; font-size: 1.05rem; height: 1.9rem; justify-content: center; width: 1.9rem; }
+
+.navbar-toggler { border-color: rgba(255,255,255,.35); }
+.navbar-toggler-icon { filter: brightness(0) invert(1); }
+.navbar-toggler:focus { box-shadow: 0 0 0 .2rem rgba(255,255,255,.2); }
+.page-container { box-sizing: border-box; flex: 1 0 auto; margin-left: 248px; max-width: none; overflow-x: hidden; padding: 1.5rem 2rem 0; width: calc(100% - 248px); }
+.page-container > main > .container { margin-left: 0; margin-right: auto; max-width: 1240px; padding-left: 0; padding-right: 0; }
+
+.footer { background: #fff; border-top: 1px solid var(--vet-border); box-sizing: border-box; flex: 0 0 auto; line-height: normal; margin-left: 248px; padding: 1.35rem 2rem; position: relative; width: calc(100% - 248px); }
+.footer .container { align-items: center; display: flex; justify-content: space-between; max-width: none; padding: 0; }
+.footer a { font-size: .9rem; text-decoration: none; }
+
+@media (max-width: 767.98px) {
+  .app-header { bottom: auto; height: auto; position: relative; width: 100%; }
+  .app-header .navbar { height: auto; padding: .7rem 1rem; }
+  .app-header .container { display: block; }
+  .app-brand { margin: 0; }
+  .app-header .navbar-collapse { display: none !important; }
+  .app-header .navbar-collapse.show { display: flex !important; }
+  .app-nav { padding: .7rem 0 .2rem; }
+  .page-container, .footer { margin-left: 0; width: 100%; }
+  .page-container { padding: 1rem 0 0; }
+  .footer { padding: 1.35rem 1rem; }
+}
+
+@media (min-width: 768px) {
+  .app-header .navbar-toggler { display: none; }
 }
