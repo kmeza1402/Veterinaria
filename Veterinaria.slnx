@@ -2,7 +2,7 @@
   <Folder Name="/docs/">
     <File Path="docs/LINEA_BASE_P7.md" />
     <File Path="docs/PRUEBAS_BACKEND.md" />
-    <File Path="PRUEBAS_FRONTEND.md" />
+    <File Path="docs/PRUEBAS_FRONTEND.md" />
   </Folder>
   <Project Path="Veterinaria.Datos/Veterinaria.Datos.csproj" Id="4289a70a-dfb4-4b37-b0af-5bc941146a46" />
   <Project Path="Veterinaria.Entidades/Veterinaria.Entidades.csproj" Id="9263a56e-51ab-4a46-ab0f-501b03e117b0" />
