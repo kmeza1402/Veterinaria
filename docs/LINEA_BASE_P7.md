@@ -31,7 +31,10 @@
 ## Problemas resueltos
 
 - Las páginas Eliminar cargaban datos fuera del try en OnPost; se movió la carga dentro del try.
-- [Agregar aquí lo que corrigió Frontend: título de Mascotas/Editar u otros.]
+- Frontend: se corrigió el título de Mascotas/Editar ("Editar Mascota").
+- Frontend: los mensajes de error ahora se ven en pantalla.
+- Frontend: se ajustó el diseño responsivo (390 px, 768 px y escritorio).
+- Frontend: se agregó el manual de usuario (docs/MANUAL_USUARIO.md).
 
 ## Problemas pendientes
 
