@@ -12,16 +12,16 @@
         <div class="alert alert-danger">
             @Model.Error
         </div>
-    }
 
-    @if (string.IsNullOrWhiteSpace(Model.Error))
+        <a asp-page="./Index"
+           class="btn btn-secondary">
+            Regresar
+        </a>
+    }
+    else
     {
         <div class="alert alert-warning">
-            ¿Desea eliminar al cliente
-            <strong>
-                @Model.Cliente.Nombre
-                @Model.Cliente.ApellidoPaterno
-            </strong>?
+            Confirmar eliminación
         </div>
 
         <form method="post">
@@ -35,12 +35,5 @@
                 Cancelar
             </a>
         </form>
-    }
-    else
-    {
-        <a asp-page="./Index"
-           class="btn btn-secondary">
-            Regresar
-        </a>
     }
 </div>
