@@ -1,12 +1,48 @@
 # Sistema Veterinario
 
-Proyecto de la materia: Ambientes de Programación Visual
+Proyecto académico de
+Ambientes de Programación Visual.
+
+## Tecnologías
+
+- ASP.NET Core Razor Pages
+- C#
+- Bootstrap
+- MySQL
+- MySql.Data
+- GitHub Desktop
+
+## Arquitectura
+
+Web → Negocios → Datos → MySQL
+
+## Módulos funcionales
+
+- Clientes
+- Mascotas
+
+## Requisitos
+
+- Visual Studio
+- .NET 10
+- MySQL Server
+- MySQL Workbench
+
+## Base de datos
+
+1. Ejecutar `database/00_crear_bd.sql`
+2. Ejecutar `database/01_datos_prueba.sql`
+
+## Configuración local
+
+La conexión utiliza User Secrets.
+No se publican contraseñas.
 
 ## Equipo
 
-- Backend: Meza Espinoza Kevin Andre
 - Frontend: Zazueta Medrano Aidan
-- DBA: Jaime Mascareno Carlos Alberto
+- Backend: Meza Espinoza Kevin Andre
+- DBA: Jaime Mascareño Carlos Alberto
 
 ## Ramas de trabajo
 
