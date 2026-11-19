@@ -17,3 +17,23 @@ Al ejecutarlo se elimina la base local Veterinaria y se crea nuevamente.
 ## Practica 6
 - `03_verificacion_p6.sql`: consultas para revisar los datos.
 - No crea la base. Se usa despues de las pruebas Web.
+
+## Practica 7
+
+Archivo agregado:
+
+- `04_verificacion_final_p7.sql`
+
+Finalidad:
+comprobar el estado final de la base durante las pruebas de aceptacion,
+incluyendo las 9 tablas, sus PK, sus FK y las reglas de integridad referencial.
+
+Orden recomendado:
+
+1. 00_crear_bd.sql
+2. 01_datos_prueba.sql
+3. 02_pruebas.sql
+4. 03_verificacion_p6.sql
+5. 04_verificacion_final_p7.sql
+
+Nota: `00_crear_bd.sql` elimina y reconstruye la base local.
